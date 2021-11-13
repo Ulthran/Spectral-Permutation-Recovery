@@ -1,11 +1,19 @@
 # Spectral Permutation Recovery
-R codes and data sets used in Ma, Cai and Li (2021, JASA)
+R codes and data sets used in Ma, R., Cai, T. T., and Li, H. (2021) Optimal Permutation Recovery in Permuted Monotone Matrix Model.  Journal of the American Statistical Association, 116(535), 1358-1372.
 
-Generally speaking, the spectral permutation recovery method takes a data set 
-```math
-SE = \frac{\sigma}{\sqrt{n}}
-```
-$X\in \R^{n\times p}$ with disordered columns as input. In the first step, each row is centred to have mean zero; in the second step, we apply SVD to the row-centred matrix and extract the first right singular vector $u_1$ associated to the largest singular value. The true order of columns are inferred based on the relative magnitude of the $u_1$ component.
+
+Generally speaking, the spectral permutation recovery method takes a data matrix
+`data`
+with disordered columns as input, and outputs a vector giving a natural order of the columns. In the first step, each row is centred to have mean zero
+
+`data.c=data-(rowMeans(data) %o% rep(1,dim(data)[2])`
+
+In the second step, we apply SVD to the row-centred matrix and extract the first right singular vector 
+
+`v1=svd(data.c)$v[,1]` 
+
+associated to the largest singular value. The order of columns are inferred based on the relative magnitude of the `v1` component.
+
 
 The directory Supplement/Data/ contains the datasets used for Sections 6.2 and 6.3 of our main paper.
 1. The files under the directory Subset12info contains the contig converges obtained from the 41 synthetic bacterial genomes. 

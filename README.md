@@ -6,7 +6,7 @@ Generally speaking, the spectral permutation recovery method takes a data matrix
 `data`
 with disordered columns as input, and outputs a vector giving a natural order of the columns. In the first step, each row is centred to have mean zero
 
-`data.c=data-(rowMeans(data) %o% rep(1,dim(data)[2])`
+`data.c=data-(rowMeans(data) %o% rep(1,dim(data)[2]))`
 
 In the second step, we apply SVD to the row-centred matrix and extract the first right singular vector 
 

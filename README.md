@@ -1,4 +1,4 @@
-# Spectral-Permutation-Recovery
+# Spectral Permutation Recovery
 R codes and data sets used in Ma, Cai and Li (2021, JASA)
 
 The directory Supplement/Data/ contains the datasets used for Sections 6.2 and 6.3 of our main paper.

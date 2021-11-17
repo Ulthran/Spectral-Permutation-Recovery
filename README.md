@@ -27,3 +27,5 @@ The directory Supplement/RCodes/ contains the R Codes used in this paper.
 3. Simulation_Supp.R contains the R codes for Figure 1 in our online Supplementary Material.
 4. Simulation_01Loss.R contains the R codes for the simulations in Section 6.1 Table 1 of our main paper.
 5. Simulation_Kendall.R contains the R codes for the simulations in Section 6.1 Figure 4 of our main paper.
+
+For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).

@@ -1,0 +1,7 @@
+^renv$
+^renv\.lock$
+^SpectralPermutationRecovery\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^\.github$
+^codecov\.yml$

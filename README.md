@@ -1,5 +1,11 @@
 # Spectral Permutation Recovery
+
 R codes and data sets used in Ma, R., Cai, T. T., and Li, H. (2021) Optimal Permutation Recovery in Permuted Monotone Matrix Model.  Journal of the American Statistical Association, 116(535), 1358-1372.
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/Ulthran/Spectral-Permutation-Recovery/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Ulthran/Spectral-Permutation-Recovery/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/Ulthran/Spectral-Permutation-Recovery/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Ulthran/Spectral-Permutation-Recovery?branch=main)
+<!-- badges: end -->
 
 
 Generally speaking, the spectral permutation recovery method takes a data matrix

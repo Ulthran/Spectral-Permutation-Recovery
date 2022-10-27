@@ -1,0 +1,45 @@
+---
+title: "SpectralPermutationRecovery"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{SpectralPermutationRecovery}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+#library(SpectralPermutationRecovery)
+```
+
+## Introduction
+
+Generally speaking, the spectral permutation recovery method takes a data matrix
+`data`
+with disordered columns as input, and outputs a vector giving a natural order of the columns. In the first step, each row is centered to have mean zero,
+
+```r
+data.c <- data - (rowMeans(data) %o% rep(1, dim(data)[2]))
+```
+
+In the second step, we apply SVD to the row-centered matrix and extract the first right singular vector,
+
+```r
+v1 <- svd(data.c)$v[,1]
+```
+
+associated with the largest singular value. The order of columns are inferred based on the relative magnitude of the `v1` component.
+
+## Installation
+
+
+
+## Usage
+
+Common usage examples

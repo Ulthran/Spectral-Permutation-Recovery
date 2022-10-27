@@ -1,15 +1,23 @@
 Package: SpectralPermutationRecovery
-Title: What the Package Does (One Line, Title Case)
+Title: Optimal Permutation Recovery in Permuted Monotone Matrix Model
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    c(
+      person("Rong", "Ma", , "rongm@stanford.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9248-8503")),
+      person("Tony", "Cai", , "tcai@wharton.upenn.edu", role = "aut", comment = c(ORCID = "0000-0002-1673-6296")),
+      person("Hongzhe", "Li", , "hongzhe@pennmedicine.upenn.edu", role = "aut", comment = c(ORCID = "0000-0003-3662-3907"))
+    )
+Description: Estimation/recovery of Π given the observed noisy matrix Y, considering a permuted monotone matrix model Y=ΘΠ+Z. This estimator is based on the best linear projection, which is shown to be minimax rate-optimal for both exact recovery, as measured by the 0-1 loss, and partial recovery, as quantified by the normalized Kendall's tau distance.
+URL: https://ulthran.github.io/Spectral-Permutation-Recovery/, https://github.com/Ulthran/Spectral-Permutation-Recovery
+BugReports: ISSUESLINKONCEREPONOTFORKED
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Suggests: 
     covr,
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+VignetteBuilder: knitr

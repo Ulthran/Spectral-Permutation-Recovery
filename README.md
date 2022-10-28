@@ -20,4 +20,4 @@ devtools::install_github("Ulthran/SpectralPermutationRecovery")
 
 ## Documentation
 
-See the [GitHub Pages site](https://ulthran.github.io/Spectral-Permutation-Recovery/) for function documentation. See vignettes for further usage information. Please cite [Optimal Permutation Recovery in Permuted Monotone Matrix Model](https://arxiv.org/abs/1911.10604) by Rong Ma, T. Tony Cai, & Hongzhe Li.
+See the [GitHub Pages site](https://ulthran.github.io/Spectral-Permutation-Recovery/) for function documentation. See vignettes for further usage information. Please cite [Optimal Permutation Recovery in Permuted Monotone Matrix Model](https://arxiv.org/abs/1911.10604) by Rong Ma, T. Tony Cai, & Hongzhe Li (full citation [here](https://ulthran.github.io/Spectral-Permutation-Recovery/authors.html#citation)).

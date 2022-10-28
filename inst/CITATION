@@ -1,0 +1,13 @@
+citHeader("To cite SpectralPermutationRecovery in publications use:")
+
+citEntry(
+  entry    = "Article",
+  title    = "Optimal Permutation Recovery in Permuted Monotone Matrix Model",
+  author   = "Rong Ma, T. Tony Cai, Hongzhe Li",
+  journal  = "Journal of the American Statistical Association",
+  year     = "2021",
+  volume   = "116",
+  pages    = "1358-1372",
+  url      = "https://doi.org/10.1080/01621459.2020.1713794",
+  textVersion = "v1"
+)
